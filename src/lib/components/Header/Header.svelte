@@ -3,15 +3,6 @@
 
 	<nav>
 		<ul>
-			<li>
-				<a href="/blog">Posts</a>
-			</li>
-			<li>
-				<a href="/about">About</a>
-			</li>
-			<li>
-				<a href="/contact">Contact</a>
-			</li>
 		</ul>
 	</nav>
 </header>
@@ -25,10 +16,9 @@
 		justify-content: space-between;
         color: #FFF;
         text-shadow: 6px 4px 7px rgba(0, 0, 0, 0.80);
-        font-family: 'Silkscreen', sans-serif;       
+        font-family: 'Bungee Hairline', sans-serif;       
         font-size: 32px;
         font-style: normal;
-        font-weight: 200;
         line-height: normal;
 	}
 
