@@ -1,5 +1,5 @@
 <script>
-    import Portal from '$lib/images/portal.png';
+    import Portal from '$lib/images/teleportbutton.png';
     import { takeMeSomewhere } from '$lib/utils/Destination.js';
     function teleport() {
         var bodyElement = document.body;
@@ -12,7 +12,7 @@
 
 <div id="portal">
     <button on:click={teleport}>
-        <img src={Portal} alt="a teleportation device" width="700px" />
+        <img src={Portal} alt="a teleportation device" />
     </button>
 </div>
 
@@ -20,6 +20,17 @@
     #portal {
         display: flex;
         justify-content: center;
+        height: 75vh;
+    }
+
+    img {
+        max-width: 25%;
+    }
+
+    @media only screen and (max-width: 480px) {
+        img {
+            max-width: 50%;
+        }
     }
     button {
         background: none;
