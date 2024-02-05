@@ -1,8 +1,15 @@
+<script>
+	function displayInput() {
+		alert("got it!")
+	}
+</script>
+
 <header>
 	<a href="/">Random Teleport</a>
 
 	<nav>
 		<ul>
+			<button on:click={displayInput}>Submit Destination</button>
 		</ul>
 	</nav>
 </header>
@@ -33,5 +40,10 @@
 	a {
 		text-decoration: none;
 		color: inherit;
+	}
+
+	button {
+		all: unset;
+		cursor: pointer;
 	}
 </style>
