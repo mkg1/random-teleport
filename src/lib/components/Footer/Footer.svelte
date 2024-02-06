@@ -11,5 +11,6 @@
     }
     footer {
         color: gray;
+		font-family: 'Bungee Hairline', sans-serif;
     }
 </style>

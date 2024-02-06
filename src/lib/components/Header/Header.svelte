@@ -1,11 +1,17 @@
 <script>
+	export let pagecontext;
+
 	function displayInput() {
-		alert("got it!")
+		pagecontext = 'enterDestination'
+	}
+
+	function displayPortal() {
+		pagecontext = 'portal'
 	}
 </script>
 
 <header>
-	<a href="/">Random Teleport</a>
+	<button on:click={displayPortal}>Random Teleport</button>
 
 	<nav>
 		<ul>
@@ -36,12 +42,7 @@
 		gap: 1rem;
         font-size: 16px;
 	}
-
-	a {
-		text-decoration: none;
-		color: inherit;
-	}
-
+	
 	button {
 		all: unset;
 		cursor: pointer;
